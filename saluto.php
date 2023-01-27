@@ -1,8 +1,8 @@
 <?php
 $paragrafo = $_POST["paragrafo"];
-$censura = $_POST["censura"]
-
-str_replace()
+$censura = $_POST["censura"];
+$new_string = str_replace($censura,'* * *',$paragrafo);
+echo strlen($new_string)
 
 ?>
 
@@ -15,7 +15,7 @@ str_replace()
     <title>Document</title>
 </head>
 <body>
-    <h1><?php echo $paragrafo?></h1>
-    <h1><?php echo $censura?></h1>
+    <p><?php echo $paragrafo?></p>
+    <p><?php echo $new_string?></p>
 </body>
 </html>

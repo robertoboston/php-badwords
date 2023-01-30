@@ -14,7 +14,7 @@
 </head>
 <body>
     <form action="./saluto.php" method="POST">
-        <input type="text" name="paragrafo" id="paragrafo" placeholder="inserisci qui il tuo paragrafo">
+        <textarea type="text" name="paragrafo" id="paragrafo" placeholder="inserisci qui il tuo paragrafo"></textarea>
         <input type="text" name="censura" id="censura" placeholder="parola da censurare">
         <button type="submit">Invia</button>
     </form>

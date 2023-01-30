@@ -2,7 +2,6 @@
 $paragrafo = $_POST["paragrafo"];
 $censura = $_POST["censura"];
 $new_string = str_replace($censura,'* * *',$paragrafo);
-echo strlen($new_string)
 
 ?>
 
@@ -16,6 +15,7 @@ echo strlen($new_string)
 </head>
 <body>
     <p><?php echo $paragrafo?></p>
+    <h3>La lunghezza del tuo paragrafo è di <?php echo strlen($new_string)?> parole</h3>
     <p><?php echo $new_string?></p>
 </body>
 </html>

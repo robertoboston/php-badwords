@@ -14,8 +14,9 @@ $new_string = str_replace($censura,'* * *',$paragrafo);
     <title>Document</title>
 </head>
 <body>
-    <p><?php echo $paragrafo?></p>
-    <h3>La lunghezza del tuo paragrafo è di <?php echo strlen($new_string)?> parole</h3>
-    <p><?php echo $new_string?></p>
+    <p>la lunghezza del paragrafo è di <?php echo strlen($paragrafo)?></p>
+    <h3><?php echo $paragrafo?></h3>
+    <p>La lunghezza del paragrafo censurato è di <?php echo strlen($new_string)?> parole</p>
+    <h3><?php echo $new_string?></h3>
 </body>
 </html>
